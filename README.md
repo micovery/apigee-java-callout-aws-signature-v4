@@ -3,7 +3,7 @@
 This repo shows how to call Amazons's REST APIs using Apigee's out of the box Service Callout policy. 
 When calling Amazon's REST APIs you have to authenticate each API call with a `key` and a `secret key`.
 
-However, you also need to digitally sign each request using AWS Signature V4 algorithm. The process of computing the
+However, you also need to digitally sign each request using [AWS Signature V4 algorithm](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html). The process of computing the
 signature is non trivial. To help with this task, this repo has an Apigee Java Callout that can add
 the necessary signature headers.
 
@@ -16,7 +16,7 @@ The Java Callout policy takes an existing HTTP request object and adds the follo
 * x-amz-date
 * authorization
 
-The value of the headers are computed dynamically based on the content of the request object as well as the
+The value of the headers is computed dynamically based on the content of the request object as well as the
 AWS key and secret key. Behind the scenes it leverages [Amazon's SDK for Java](https://aws.amazon.com/sdk-for-java/) 
 to compute these values.
 
