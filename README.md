@@ -96,9 +96,10 @@ We can do that using Apigee's Service Callout policy:
 ```
 
 
-### Sample Apigee Shared-Flow
+### Sample Apigee API Proxy
 
-I've included a [Sample Apigee Proxy](https://github.com/micovery/apigee-java-callout-aws-signature-v4/raw/master/downloads/apigee-s3-sample-apiproxy.zip) (in the downloads directory) you can use to quickly try out the Java Callout. 
+I've included a [Sample Apigee Proxy](https://github.com/micovery/apigee-java-callout-aws-signature-v4/raw/master/downloads/apigee-s3-sample-apiproxy.zip) (in the downloads directory) you can use to quickly try out the Java Callout (This proxy assumes that you have an Apigee KVM named "aws-s3-credentials" with the "key", and "secretKey" entries).
+
 If you are going to be using this across from multiple Apigee proxies, consider creating an [Apigee Shared-Flow](https://docs.apigee.com/api-platform/fundamentals/shared-flows) instead.
 
 
