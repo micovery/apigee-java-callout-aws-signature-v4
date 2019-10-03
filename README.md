@@ -135,10 +135,6 @@ $ mvn package
 Once this is done you will see a new jar file  "edge-callout-aws-signature-v4.jar" within the target directory. 
 That is the build output.
 
-The build process itself runs inside docker, so it should work well across different operating
-systems a long as you have both bash, and docker installed in your system.
-
-
 ### Not Google Product Clause
 
 This is not an officially supported Google product.
